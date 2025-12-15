@@ -760,6 +760,61 @@ ul {
     margin-right: auto;
 }
 
+/* ===== ÍCONE DO CARD ===== */
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* ===== SEÇÃO DIFERENCIAIS ===== */
+.diferenciais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.diferencial-item {
+    background: var(--color-gray);
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid rgba(0, 191, 255, 0.1);
+    transition: var(--transition-normal);
+}
+
+.diferencial-item:hover {
+    border-color: var(--color-blue);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-small);
+}
+
+.diferencial-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.diferencial-item p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .diferenciais-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .diferencial-item {
+        padding: 1.2rem;
+    }
+}
+
 /* ===== SEÇÃO CONTATO ===== */
 .contact-section {
     padding: 120px 0;

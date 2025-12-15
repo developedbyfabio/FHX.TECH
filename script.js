@@ -412,9 +412,9 @@ window.addEventListener('resize', () => {
 });
 
 // ===== CONSOLE ART (EASTER EGG ADICIONAL) =====
-console.log('%c🚀 FHX.TECH', 'font-size: 30px; color: #00bfff; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 191, 255, 0.5);');
-console.log('%cPowered by AI 🤖', 'font-size: 16px; color: #c0c0c0;');
-console.log('%cDesenvolvido por Fábio Henrique de Almeida Lemes', 'font-size: 12px; color: #888;');
+console.log('%c🔧 FHX Assistência Técnica', 'font-size: 30px; color: #00bfff; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 191, 255, 0.5);');
+console.log('%cTecnologia funcionando do jeito certo 💻', 'font-size: 16px; color: #c0c0c0;');
+console.log('%cCuritiba - PR', 'font-size: 12px; color: #888;');
 console.log('%cDigite "fhx" em qualquer lugar da página para ver uma surpresa! 😉', 'font-size: 12px; color: #00bfff; font-style: italic;');
 
 // ===== EXPORTAR FUNÇÕES (SE NECESSÁRIO) =====
@@ -424,146 +424,72 @@ window.FHX = {
     updateScrollProgress
 };
 
-// ===== SEÇÃO DE SOLUÇÕES ===== 
+// ===== SEÇÃO DE SERVIÇOS ===== 
 
-// Dados das soluções
+// Dados dos serviços de assistência técnica
 const solutionsData = [
-    // --- CASES REAIS ---
     {
-        title: "Sistema de Orçamentos & Aprovações (Workflow)",
-        category: "Finanças & Compras",
-        description: "Criação e aprovação de orçamentos por níveis personalizados por usuário, trilha de auditoria completa e histórico até o setor de compras. Admin para usuários, fornecedores e filiais.",
-        runOn: ["Intranet", "Servidor"],
-        tech: ["Laravel", "PHP", "MySQL", "Linux"],
-        isRealCase: true
+        title: "Manutenção e Reparos",
+        category: "Manutenção",
+        description: "Correção de falhas, lentidão, travamentos e problemas de hardware ou software em notebooks e computadores.",
+        icon: "🔧",
+        tags: ["Notebooks", "Desktops", "Diagnóstico"]
     },
     {
-        title: "Hub Corporativo & Observabilidade de TI",
-        category: "TI & Infra",
-        description: "Portal centralizador dos sistemas/links da empresa com permissões por perfil e painel para monitorar servidores e serviços usados pela TI e desenvolvimento.",
-        runOn: ["Intranet", "Servidor"],
-        tech: ["Laravel", "PHP", "Nginx", "Linux"],
-        isRealCase: true
-    },
-    // --- IDEIAS DE SOLUÇÕES QUE PODEMOS CONSTRUIR ---
-    {
-        title: "Dashboard Executivo Unificado (BI)",
-        category: "BI & Analytics",
-        description: "Uma visão única de vendas, custos, estoque e financeiro com gráficos, metas e alertas. Adeus planilhas dispersas.",
-        runOn: ["Servidor", "Cloud"],
-        tech: ["ETL", "PostgreSQL", "Metabase/Redash", "Python"]
+        title: "Formatação e Sistemas",
+        category: "Formatação",
+        description: "Formatação completa, instalação e configuração de Windows, drivers e atualizações essenciais.",
+        icon: "💿",
+        tags: ["Windows", "Drivers", "Configuração"]
     },
     {
-        title: "Gestão de Compras & Estoque com Previsão",
-        category: "Finanças & Compras",
-        description: "Requisição → aprovação → pedido → recebimento → estoque, com previsão de demanda e reposição automática.",
-        runOn: ["Intranet", "Servidor"],
-        tech: ["Laravel", "PostgreSQL", "Jobs", "Forecasting"]
+        title: "Upgrades de Computadores",
+        category: "Upgrade",
+        description: "Melhore o desempenho do seu PC com upgrades de memória, SSD, placa de vídeo e outros componentes.",
+        icon: "⚡",
+        tags: ["SSD", "RAM", "Placa de Vídeo"]
     },
     {
-        title: "CRM Enxuto com IA para PMEs",
-        category: "Vendas & Marketing",
-        description: "Pipeline de vendas, follow-up automático, priorização de leads e templates inteligentes de contato.",
-        runOn: ["Cloud", "Servidor"],
-        tech: ["Laravel", "Redis", "Jobs", "NLP"]
+        title: "Upgrades de Notebooks",
+        category: "Upgrade",
+        description: "Atualização de hardware para deixar seu notebook mais rápido e eficiente, com análise de compatibilidade.",
+        icon: "💻",
+        tags: ["SSD", "RAM", "Compatibilidade"]
     },
     {
-        title: "Assistente de Atendimento Interno (Chatbot)",
-        category: "Atendimento & Suporte",
-        description: "Base de conhecimento + chatbot para dúvidas frequentes de colaboradores e clientes internos.",
-        runOn: ["Intranet", "Cloud"],
-        tech: ["NLP", "Vectors", "Laravel", "API Integrations"]
+        title: "Montagem de PCs e PCs Gamers",
+        category: "Montagem",
+        description: "Montagem personalizada de computadores e PCs gamers de acordo com sua necessidade e orçamento.",
+        icon: "🎮",
+        tags: ["PC Gamer", "Personalizado", "Montagem"]
     },
     {
-        title: "Gestão de Projetos & Kanban Operacional",
-        category: "Operações",
-        description: "Quadros, sprints, apontamento de horas e indicadores de produtividade por equipe e centro de custo.",
-        runOn: ["Servidor", "Cloud"],
-        tech: ["Laravel", "Vue/React", "PostgreSQL"]
+        title: "Instalação de Programas",
+        category: "Software",
+        description: "Instalação e configuração de programas, aplicativos, antivírus e softwares essenciais.",
+        icon: "📦",
+        tags: ["Programas", "Antivírus", "Office"]
     },
     {
-        title: "Manutenção Preventiva & OEE (Chão de Fábrica)",
-        category: "Operações",
-        description: "Controle de ativos, calendário de manutenção, OEE e alarmes para paradas não programadas.",
-        runOn: ["Intranet", "Servidor"],
-        tech: ["Laravel", "MQTT/IoT opcional", "Timeseries DB"]
+        title: "Remoção de Vírus e Otimização",
+        category: "Software",
+        description: "Limpeza de vírus, malwares e ajustes para melhorar desempenho e segurança do sistema.",
+        icon: "🛡️",
+        tags: ["Vírus", "Malware", "Segurança"]
     },
     {
-        title: "Help Desk + SLA + Base de Conhecimento",
-        category: "Atendimento & Suporte",
-        description: "Abertura de chamados, fluxos de aprovação, SLAs, categorias e artigos de solução.",
-        runOn: ["Intranet", "Servidor"],
-        tech: ["Laravel", "MySQL", "Email/LDAP SSO"]
+        title: "Troca de Peças",
+        category: "Manutenção",
+        description: "Substituição de HD/SSD, memória RAM, fontes, placas de vídeo, telas e outros componentes.",
+        icon: "🔩",
+        tags: ["Peças", "Substituição", "Componentes"]
     },
     {
-        title: "RH: Recrutamento, Onboarding & Treinamentos",
-        category: "RH & Pessoas",
-        description: "Vagas, etapas de seleção, checklists de integração e trilhas de capacitação com certificados.",
-        runOn: ["Cloud", "Servidor"],
-        tech: ["Laravel", "Storage", "Jobs"]
-    },
-    {
-        title: "Portal do Cliente B2B",
-        category: "Vendas & Marketing",
-        description: "Área autenticada para pedidos, 2ª via, histórico e abertura de solicitações.",
-        runOn: ["Cloud", "Servidor"],
-        tech: ["Laravel", "API", "Cache"]
-    },
-    {
-        title: "Roteirização & Logística de Entregas",
-        category: "Logística & Frota",
-        description: "Roteiros otimizados, janelas de entrega e acompanhamento em tempo real.",
-        runOn: ["Cloud"],
-        tech: ["Maps API", "Optimization", "Laravel"]
-    },
-    {
-        title: "Frota: Manutenção, Abastecimento & Custos",
-        category: "Logística & Frota",
-        description: "Registros de manutenção, abastecimentos, alertas e indicadores por veículo.",
-        runOn: ["Servidor"],
-        tech: ["Laravel", "PostgreSQL"]
-    },
-    {
-        title: "Financeiro Enxuto (Contas, Fluxo & Centro de Custos)",
-        category: "Finanças & Compras",
-        description: "Contas a pagar/receber, conciliação por extrato e painéis por centro de custo.",
-        runOn: ["Servidor", "Cloud"],
-        tech: ["Laravel", "Importação OFX/CSV"]
-    },
-    {
-        title: "Gestão de Contratos & Assinaturas",
-        category: "Governança & Compliance",
-        description: "Cadastro, vencimentos, alertas e fluxo de renovação/assinatura digital.",
-        runOn: ["Cloud", "Servidor"],
-        tech: ["Laravel", "Storage", "Assinatura Digital"]
-    },
-    {
-        title: "Qualidade: Checklists & Não-Conformidades",
-        category: "Operações",
-        description: "Auditorias móveis, plano de ação, responsáveis e trilha de evidências.",
-        runOn: ["Intranet", "Servidor"],
-        tech: ["Laravel", "PWA", "Camera Upload"]
-    },
-    {
-        title: "Agendamento de Serviços & Field Service",
-        category: "Atendimento & Suporte",
-        description: "Agenda de técnicos, ordens de serviço e relatórios com fotos e assinaturas.",
-        runOn: ["Cloud"],
-        tech: ["Laravel", "PWA", "Maps API"]
-    },
-    {
-        title: "Documentos, Políticas & Treinamentos (LMS leve)",
-        category: "Governança & Compliance",
-        description: "Repositório de documentos, versões, aceite de políticas e cursos rápidos.",
-        runOn: ["Servidor", "Cloud"],
-        tech: ["Laravel", "Storage", "Jobs"]
-    },
-    {
-        title: "Integrações & Robôs de Rotina (RPA leve)",
-        category: "TI & Infra",
-        description: "Jobs automáticos para importar/exportar dados entre ERPs, planilhas e APIs.",
-        runOn: ["Servidor"],
-        tech: ["Python", "Laravel Jobs", "APIs"]
+        title: "Suporte Geral em Informática",
+        category: "Suporte",
+        description: "Configurações, diagnósticos, ajustes e soluções para problemas do dia a dia com tecnologia.",
+        icon: "🖥️",
+        tags: ["Suporte", "Configuração", "Ajustes"]
     }
 ];
 
@@ -610,42 +536,30 @@ function renderSolutions(solutions) {
     }, 100);
 }
 
-// Criar card de solução
+// Criar card de serviço
 function createSolutionCard(solution, index) {
     const card = document.createElement('div');
     card.className = 'solution-card fade-in';
     card.style.animationDelay = `${index * 0.1}s`;
     
-    // Badge Case Real
-    const realCaseBadge = solution.isRealCase 
-        ? '<div class="real-case-badge">⭐ CASE REAL</div>' 
-        : '';
-    
-    // Badges de execução
-    const runOnBadges = solution.runOn
-        .map(run => `<span class="badge badge-run">${run}</span>`)
-        .join('');
-    
-    // Badges de tecnologia (limitar a 4)
-    const techBadges = solution.tech
-        .slice(0, 4)
-        .map(tech => `<span class="badge badge-tech">${tech}</span>`)
+    // Badges de tags
+    const tagBadges = solution.tags
+        .map(tag => `<span class="badge badge-tech">${tag}</span>`)
         .join('');
     
     // URL do WhatsApp
-    const whatsappUrl = `https://wa.me/5541991541757?text=Olá, Fábio! Quero conversar sobre a solução "${encodeURIComponent(solution.title)}".`;
+    const whatsappUrl = `https://wa.me/5541991541757?text=Olá! Gostaria de solicitar o serviço de "${encodeURIComponent(solution.title)}".`;
     
     card.innerHTML = `
-        ${realCaseBadge}
+        <div class="card-icon">${solution.icon}</div>
         <div class="card-category">${solution.category}</div>
         <h3 class="card-title">${solution.title}</h3>
         <p class="card-description">${solution.description}</p>
         <div class="card-badges">
-            ${runOnBadges}
-            ${techBadges}
+            ${tagBadges}
         </div>
         <a href="${whatsappUrl}" target="_blank" class="card-cta">
-            Quero essa solução
+            Solicitar Serviço
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
@@ -681,7 +595,7 @@ function applyFilters() {
         filtered = filtered.filter(solution => 
             solution.title.toLowerCase().includes(currentSearch) ||
             solution.description.toLowerCase().includes(currentSearch) ||
-            solution.tech.some(tech => tech.toLowerCase().includes(currentSearch))
+            solution.tags.some(tag => tag.toLowerCase().includes(currentSearch))
         );
     }
     
