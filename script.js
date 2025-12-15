@@ -412,10 +412,10 @@ window.addEventListener('resize', () => {
 });
 
 // ===== CONSOLE ART (EASTER EGG ADICIONAL) =====
-console.log('%c🔧 FHX Assistência Técnica', 'font-size: 30px; color: #00bfff; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 191, 255, 0.5);');
+console.log('%c🔧 FHX Assistência Técnica', 'font-size: 30px; color: #8A2BE2; font-weight: bold; text-shadow: 2px 2px 4px rgba(138, 43, 226, 0.5);');
 console.log('%cTecnologia funcionando do jeito certo 💻', 'font-size: 16px; color: #c0c0c0;');
-console.log('%cCuritiba - PR', 'font-size: 12px; color: #888;');
-console.log('%cDigite "fhx" em qualquer lugar da página para ver uma surpresa! 😉', 'font-size: 12px; color: #00bfff; font-style: italic;');
+console.log('%cSão José dos Pinhais - PR', 'font-size: 12px; color: #888;');
+console.log('%cDigite "fhx" em qualquer lugar da página para ver uma surpresa! 😉', 'font-size: 12px; color: #8A2BE2; font-style: italic;');
 
 // ===== EXPORTAR FUNÇÕES (SE NECESSÁRIO) =====
 window.FHX = {
